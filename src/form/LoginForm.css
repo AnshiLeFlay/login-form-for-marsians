@@ -32,42 +32,87 @@ input:-webkit-autofill {
 
 /* Стили для мобильных устройств */
 @media screen and (max-width: 480px) {
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-form-cover {
+        color: white;
+        padding: 0 5%;
+        display: flex;
+        justify-content: center;
+        background: rgb(204, 116, 57);
+        background: linear-gradient(
+            0deg,
+            rgba(204, 116, 57, 1) 0%,
+            rgba(207, 133, 55, 1) 50%,
+            rgba(219, 156, 65, 1) 100%
+        );
+    }
+
+    .login-form-cover-title {
+        font-size: 26px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        margin-top: 10%;
+    }
+
+    .login-form-cover-caption {
+        font-size: 22px;
+    }
+
     .login-form-wrapper {
         padding: 10px;
     }
 
+    .login-form-outer {
+        padding: 10% 5%;
+    }
+
     .login-form {
-        max-width: 300px;
-        margin: 0 auto;
+        background-color: #e5e8ef;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+            rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+            rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
 
     .login-form-group {
         margin-bottom: 10px;
     }
 
-    .login-form-label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .login-form-input {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 25px;
-        border: 1px solid #ccc;
+    .login-form-button-wrapper {
+        margin-top:10%;
     }
 
     .login-form-button {
-        display: block;
-        width: 100%;
-        padding: 10px;
+        width:100%;
+        background: #fc6e4e;
+        background: linear-gradient(0deg, #e6553e 0%, #fc6e4e 100%);
+        border-radius: 999px;
+        box-shadow: #e6553e 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #ffffff;
         font-size: 16px;
-        border-radius: 5px;
-        border: none;
-        background-color: #3498db;
-        color: #fff;
-        cursor: pointer;
+        font-weight: 700;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        border: 0;
     }
 }
 
