@@ -32,15 +32,15 @@ function LoginForm() {
                 <div className="login-form-cover">
                     <div>
                         <p className="login-form-cover-title">
-                            Some site title
+                            MARS
                         </p>
                         <p className="login-form-cover-caption">
-                            caption for this title
+                            Explore the Red Planet: Join us on our mission to colonize Mars
                         </p>
                     </div>
                 </div>
                 <div className="login-form-outer">
-                    <h2 className="login-form-title">Log In</h2>
+                    <h2 className="login-form-title">Sign in</h2>
                     <div className="login-form-group">
                         <label className="login--label inp" htmlFor="email">
                             <input
