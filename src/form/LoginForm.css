@@ -222,7 +222,6 @@ input:-webkit-autofill {
         outline: 0 solid transparent;
         padding: 8px 18px;
         user-select: none;
-        -webkit-user-select: none;
         touch-action: manipulation;
         width: fit-content;
         word-break: break-word;

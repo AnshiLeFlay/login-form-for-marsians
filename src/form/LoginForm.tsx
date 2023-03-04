@@ -11,11 +11,27 @@ function LoginForm() {
         email: "",
         password: "",
     });
+    //const [error, setError] = useState<string>("");
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(`Email: ${state.email}, Password: ${state.password}`);
-        // TODO: Send login request to server
+
+
+        /* if we need a custom error handle for emails
+        const emailRegex =
+            // eslint-disable-next-line no-useless-escape
+            /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+        if (state.email !== "") {
+            if (state.email.match(emailRegex)) {
+                setError("");
+                
+                //
+            } else {
+                setError("Invalid email format");
+            }
+        } else setError("Please enter your mail");
+        */
     };
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
