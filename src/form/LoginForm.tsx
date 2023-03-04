@@ -25,7 +25,7 @@ function LoginForm() {
         if (state.email !== "") {
             if (state.email.match(emailRegex)) {
                 setError("");
-                
+
                 //
             } else {
                 setError("Invalid email format");
